@@ -173,3 +173,9 @@ function clearErrors() {
     let errors = document.querySelectorAll('.error-message');
     errors.forEach(error => error.remove());
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    duration: 600,
+  })
+})
