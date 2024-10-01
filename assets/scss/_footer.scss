@@ -1,0 +1,131 @@
+.footer__main {
+    border-top: 1px solid #6A5D4B;
+    padding: 100px 0 95px;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.footer__branding {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+
+    h3 {
+        color: #6A5D4B;
+        font-family: "Alumni Sans", sans-serif;
+        font-weight: 900;
+        line-height: 64px;
+    }
+}
+
+.footer__branding {
+    .footer__social {
+        
+        a {
+
+            svg {
+                fill: #34372D;
+            }
+
+            &:nth-child(3) {
+
+                svg {
+
+                    fill: #8E7B60;
+                }
+            }
+        }
+    }
+}
+
+.footer__social {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+.footer__copyright {
+    color: #34372D;
+}
+
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer__slogan {
+    max-width: 520px;
+    text-align: right;
+    color: #34372D;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.footer__nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+
+    .footer__nav-item {
+        list-style: none;
+    }
+}
+
+.footer__nav-link {
+    color: #34372D;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer__bottom {
+    background: #423A2F;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: #fff;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .footer__main {
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .footer__info,
+    .footer__branding {
+        align-items: center;
+    }
+
+    .footer__slogan {
+        text-align: center;
+    }
+}
